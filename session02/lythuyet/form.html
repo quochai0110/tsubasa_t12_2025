@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+        Form : hay gọi là biểu mẫu dùng để thu thập thông tin gửi lên server!
+        I. Các thẻ thường dùng để tạo form
+            1. form
+            2. label | span : nhãn dán
+            3. input : ô nhập liệu
+                các thuộc tính trong ô input
+                + type gồm các giá trị:
+                    _ text: nhập mọi giá trị
+                    _ password: 
+                    _ radio
+                    _ checkbox
+                    _ date
+                    _ time
+                    _ ranger
+                    _ file
+                    _ ...
+            4. button : nút bấm
+            ...
+        II. Các thuộc tính trong form
+            1. action : địa chỉ server nhận yêu cầu 
+    -->
+    <form action="">
+      <label for="name">Họ và tên </label>
+      <input type="password" placeholder="mời nhập tên" id="name" /> <br />
+      <span> Email </span>
+      <input type="text" /> <br />
+      <textarea name="" id=""></textarea>
+      <select name="" id="">
+        <option value="">chọn tỉnh thành</option>
+        <option value="">HN</option>
+        <option value="">HCM</option>
+      </select>
+      <input type="date">
+      <input type="range" max="100" value="10">
+      <input type="file" multiple>
+      <br>
+      chọn giới tính
+      <input type="radio" name="gender1"> Nam
+      <input type="radio" name="gender1"> Nữ
+      <input type="radio" name="gender1"> Khác
+      <br>
+      chọn sở thích
+      <input type="checkbox"> đá bóng
+      <input type="checkbox"> đánh cầu lông`
+      <button>đăng ký</button>
+    </form>
+
+   
+  </body>
+</html>

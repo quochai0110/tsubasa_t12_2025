@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    trong HTML không phân biệt hoa thường
+        Bảng:
+        I. các thẻ dùng trong bảng
+            1. table
+            2. tr : tạo hàng
+            3. td,th : tạo cột
+            4. caption : tạo tiêu đề cho bảng
+        II. Các thuộc tính trong bảng
+            1. border: đường viền của bảng
+            2. cellpadding: khoảng cách từ nội dung ô đến viền của ô
+            3. cellspacing: khoảng cách từ viền của bảng đến viền của ô
+            4. align: left | center | right
+            5. bgcolor: màu nền của ô
+            6. colspan : gộp các ô theo cột 
+            7. rowspan : gộp các ô theo hàng
+
+    
+    -->
+            <table border="1" cellpadding="15" cellspacing="10">
+                <caption>QUẢN LÝ SINH VIÊN</caption>
+                <tr>
+                    <td>STT</td>
+                    <td>Họ và tên</td>
+                    <td align="center" rowspan="2">Email</td>
+                </tr>
+                 <tr>
+                    <td>1</td>
+                    <td>Vũ Hồng Vân</td>
+                  <!--   <td bgcolor="red">van@gmail.com</td> -->
+                </tr>
+                <tr>
+                    <td colspan="3">tổng số sinh viên: 2</td>
+                </tr>
+            </table>
+</body>
+</html>
