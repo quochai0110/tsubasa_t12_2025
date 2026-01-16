@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .btn {
+        border: none;
+        padding: 10px;
+        color: white;
+        background-color: tomato;
+        border-radius: 10px;
+      }
+      .btn:hover{
+        cursor: pointer;
+        background-color: green;
+        transform: scale(1.2)
+      }
+      input:checked + label{
+        color: red;
+        font-weight: bold;
+      }
+      .favorite{
+        width: 500px;
+        color: violet;
+        background-color: red;
+      }
+      .label{
+        width: 100%;
+      }
+      /* 
+      
+      */
+    </style>
+  </head>
+  <body>
+    <!-- 
+    
+    pseudo : 
+    -->
+    <button class="btn">đăng nhập</button>
+    <span class="favorite"> sở thích</span>
+    <input type="checkbox" checked >
+    <label for="checkbox"  id="checkbox">đá bóng</label>
+    <input type="checkbox" checked>
+    <label for="checkbox"  id="checkbox">cầu lông</label>
+
+    <hr>
+    <label class="label" for="">username: </label>
+    <input type="text"> <br>
+    <label for="">email</label>
+    <input>
+    <p style="display: inline-block;"> thẻ block1</p>
+    <p style="display: none;"> thẻ block2</p>
+
+  </body>
+</html>
