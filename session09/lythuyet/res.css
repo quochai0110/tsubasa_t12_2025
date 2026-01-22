@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.res {
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  color: white;
+}
+button {
+  color: red;
+  color: green;
+}
+/* phần cuối sẽ dành cho code responsive 
+    desktop first
+
+*/
+
+@media screen and (max-width: 1280px) {
+  /* 800px */
+  .res {
+    background-color: green;
+    /* viết code css */
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* 600px */
+  .res {
+    background-color: violet;
+    /* viết code logic css trong này */
+    font-size: 32px;
+    text-align: center;
+    color: #ffffff;
+  }
+  .res .nav {
+    display: none;
+  }
+}

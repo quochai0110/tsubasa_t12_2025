@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.box1 {
+  display: flex;
+}
+.big_left {
+  width: 300px;
+  height: 50px;
+  background-color:rgb(44, 62, 80);
+}
+.big_right {
+
+  display: flex;
+  flex-wrap: wrap;
+  gap:10px;
+  justify-content: center;
+  width: 300px;
+  height: 50px;
+  background-color: rgb(44, 62, 80);
+}
+.big_right .small {
+  background-color: yellow;
+  border: 1px solid tomato;
+  width: 48%;
+}
