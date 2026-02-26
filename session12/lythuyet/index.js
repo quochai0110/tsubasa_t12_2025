@@ -1,0 +1,1 @@
+alert("nhúng js theo cách external");
