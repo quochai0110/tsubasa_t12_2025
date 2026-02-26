@@ -42,10 +42,34 @@
             U: UPDATE : CẬP NHẬT
                 _theo vị trí
             D: DELETE : XÓA 
-
+               splice();
+            TÌM KIẾM, SẮP XẾP, LỌC, PHÂN TRANG...
             Các phương thức làm việc với mảng
             + slice(start, end): cắt sao chép ra mảng mới 
-
+            + split()    : chuyển string sang mảng
+            + join()     : nối các phần tử trong mảng thành string
+            + indexOf()  : kiểm tra xem phần tử có tồn tại hay không
+            + includes() :kiểm tra xem phần tử có tồn tại hay không
+            + reverce()  : đảo ngược mảng
+            + sort()     : sắp xếp
+            + concat()   : gộp các mảng
+            + find()     :
+            + findIndex():
+            + forEach():
+            + filter():
+            + map() :
+            + reduce():
+        + object _ ĐỐI TƯỢNG 
+            THUỘC TÍNH
+            PHƯƠNG THỨC
+            SINH VIÊN: 
+            GOM NHÓM NHIỀU THUỘC TÍNH CHUNG LẠI VỚI NHAU ĐỂ DỄ DÀNG QUẢN LÝ
+            CÁCH KHAI BÁO OBJECT
+            CRUD : thao tác với ĐỐI TƯỢNG
+            C: CREATE : thêm mới thuộc tính
+            R: READ   : hiển thị
+            D: DELETE : xóa
+            U: UPDATE : cập nhật
 */
 let students = [];
 students.push("Minh Thu");
@@ -65,3 +89,28 @@ for (let i = 0; i < students.length; i++) {
 let result=  students.slice(1,3);
 console.log("kết quả cắt",result);
 
+let email="hoa@gmail.com";
+let fullName="le minh hoa";
+let phoneNumber ="0823868888";
+let email1="hoa@gmail.com";
+let fullName1="le minh hoa";
+let phoneNumber1 ="0823868888";
+
+// khai báo đối tượng sinh viên 
+let person= {
+    fullName:"le minh hoa",
+    email:"hoa@gmail.com",
+    
+};
+// console.log("hiển thị tên: ",person.email);
+// THÊM THUỘC TÍNH ADDRESS CHO ĐỐI TƯỢNG 
+person.address="HN";
+for (const key1 in person) {
+    console.log("giá trị key:",person[key1]);
+    
+    
+    
+}
+delete person.email; // xóa thuộc tính khỏi đối tượng
+person.address= "HCM";
+console.log("person",person);   
