@@ -11,6 +11,7 @@ DOM GỒM 3 THÀNH CHÍNH:
 2. ATRIBUTE
     + thuộc tính 
 3. TEXT : nội dung
+    + innerHTML
 
 __________________________________________
 
