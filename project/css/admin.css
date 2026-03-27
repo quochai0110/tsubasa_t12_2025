@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    /* background-color: red; */
+    height: 80vh;
+    display: flex
+}
+.container-left{
+    /* background-color: green; */
+    flex: 1;
+    border: 1px solid black;
+}
+.container-left ul{
+    margin: 50px;
+    padding: 10px;
+   
+}
+.container-left ul li{
+    list-style: none;
+    padding: 10px;
+}
+.container-left ul li a{
+   text-decoration: none;
+   color: black;
+   font-weight: 900;
+   font-size: 30px;
+}
+.container-right{
+    /* background-color: yellow; */
+    flex: 3;
+    border: 1px solid black;
+}

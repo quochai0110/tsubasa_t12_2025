@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/admin.css" />
+    <link rel="stylesheet" href="../css/course.css" />
+  </head>
+  <body>
+    <h1>trang quản trị</h1>
+    <button onclick="logOut()">đăng xuất</button>
+    <div class="container">
+      <div class="container-left">
+        <ul>
+          <li><a href="./admin.html">Bảng điều khiển</a></li>
+          <li><a href="./course.html">Quản lý khóa học</a></li>
+          <li><a href="./class_room.html">Quản lý lớp học</a></li>
+          <li><a href="">Quản lý sinh viên</a></li>
+          <li><a href="">Quản lý tài khoản</a></li>
+        </ul>
+      </div>
+      <div class="container-right">
+        <h1>TRANG QUẢN LÝ KHÓA HỌC</h1>
+        <div class="header">
+          <button class="add" onclick="openModal()">thêm</button>
+          <div>
+            <input type="text" />
+            <button class="search">tìm kiếm</button>
+          </div>
+          <div>
+            <span>sắp xếp</span>
+            <select name="" id="">
+              <option value="">Lựa chọn</option>
+              <option value="">theo tên</option>
+              <option value="">theo thời gian</option>
+            </select>
+          </div>
+        </div>
+        <table border="1" cellpadding="10" cellspacing="15">
+          <thead>
+            <tr>
+              <th>STT</th>
+              <th>Mã Khóa học</th>
+              <th>Tên Khóa học</th>
+              <th>Thời gian</th>
+              <th>Trạng thái</th>
+              <th colspan="2">Hành động</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>RA01</td>
+              <td>Khóa học 1</td>
+              <td>1000</td>
+              <td>Hoạt động</td>
+              <td>sửa</td>
+              <td>xóa</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>RA01</td>
+              <td>Khóa học 1</td>
+              <td>1000</td>
+              <td>Hoạt động</td>
+              <td>sửa</td>
+              <td>xóa</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>RA01</td>
+              <td>Khóa học 1</td>
+              <td>1000</td>
+              <td>Hoạt động</td>
+              <td>sửa</td>
+              <td>xóa</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>RA01</td>
+              <td>Khóa học 1</td>
+              <td>1000</td>
+              <td>Hoạt động</td>
+              <td>sửa</td>
+              <td>xóa</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>RA01</td>
+              <td>Khóa học 1</td>
+              <td>1000</td>
+              <td>Hoạt động</td>
+              <td>sửa</td>
+              <td>xóa</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>RA01</td>
+              <td>Khóa học 1</td>
+              <td>1000</td>
+              <td>Hoạt động</td>
+              <td>sửa</td>
+              <td>xóa</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>RA01</td>
+              <td>Khóa học 1</td>
+              <td>1000</td>
+              <td>Hoạt động</td>
+              <td>sửa</td>
+              <td>xóa</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>RA01</td>
+              <td>Khóa học 1</td>
+              <td>1000</td>
+              <td>Hoạt động</td>
+              <td>sửa</td>
+              <td>xóa</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>RA01</td>
+              <td>Khóa học 1</td>
+              <td>1000</td>
+              <td>Hoạt động</td>
+              <td>sửa</td>
+              <td>xóa</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>RA01</td>
+              <td>Khóa học 10</td>
+              <td>1000</td>
+              <td>Hoạt động</td>
+              <td>sửa</td>
+              <td>xóa</td>
+            </tr>
+          </tbody>
+        </table>
+        <button>pre</button>
+        <button>1</button>
+        <button>Next</button>
+      </div>
+    </div>
+    <!-- Form khi thêm mới khóa học -->
+    <div class="course">
+      <div class="modal">
+        <p>Modal- thêm mới khóa học</p>
+        <span onclick="closeModal()">X</span>
+      </div>
+      <span> Mã khóa học </span> <input type="text" id="courseId" /> <br />
+      <span>Tên khóa học </span> <input type="text" id="courseName" /> <br />
+      <span>Thời gian</span> <input type="text" id="CourseTime" /> <br />
+      <span> trạng thái</span> <input type="radio" id="CourseStatus" name="course" checked> Hoạt động <input type="radio" name="course"> không hoạt động <br>
+      <button onclick="addCourse()">thêm mới</button> <button>đóng</button>
+    </div>
+    <script src="../js/course.js"></script>
+  </body>
+</html>

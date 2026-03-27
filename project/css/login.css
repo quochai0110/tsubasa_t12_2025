@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    /* background-color: red; */
+    width: 400px;
+    margin: 50px;
+    padding: 20px;
+    border: 1px solid black;
+}
+.container h1{
+    text-align: center;
+}
+.container span{
+    display: inline-block;
+    /* background-color: red; */
+    width: 80px;
+}
+.container input{
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 5px;
+}
+.container button {
+    background-color: rgb(139, 228, 6);
+    display: block;
+    margin: 0 auto;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
